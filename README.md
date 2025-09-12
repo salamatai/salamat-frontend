@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Salamat AI — AI-помощник для врачей
 
-## Getting Started
+**Salamat AI** — это веб-платформа, которая помогает врачам быстрее и точнее анализировать медицинские изображения и симптомы пациентов. Сервис фокусируется на трёх направлениях: **пульмонология, общая радиология и базовая кардиология**.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Как это работает
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Врач заходит на платформу и вводит симптомы пациента.
+2. Загружает медицинское изображение: рентген, КТ или УЗИ.
+3. Нажимает кнопку "Analyze", и AI анализирует данные.
+4. Платформа выдаёт:
+   - Предположительный диагноз
+   - Вероятность каждого заболевания
+   - Рекомендации по дальнейшим действиям
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Для чего это нужно
 
-## Learn More
+- Оптимизация работы врачей в регионах с нехваткой специалистов.
+- Ускорение первичной диагностики.
+- Поддержка принятия решений, снижение ошибок и нагрузок.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Цель проекта
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Создать инструмент, который станет **помощником врача**, повышает качество медицинской диагностики и облегчает работу в сложных условиях, таких как Кыргызстан, Казахстан и страны Центральной Азии.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Важно
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Результаты AI **не заменяют врача**. Сервис предназначен для **поддержки принятия решений**, а окончательный диагноз ставит врач.
