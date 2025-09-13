@@ -1,3 +1,11 @@
-export default function Page() {
-  return <div>Привет</div>;
+import React from 'react'
+import './globals.css'
+import Main from '@/pagesLayer/Main/Main'
+
+const page = () => {
+    return (
+        <> <Main/> </>
+    )
 }
+
+export default page
