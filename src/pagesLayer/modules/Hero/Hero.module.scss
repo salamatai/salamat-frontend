@@ -1,0 +1,37 @@
+$main-blue: #5766c2;
+$dark-blue: #3e4a98;
+$light-blue: #b4beff;
+
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    background-color: $main-blue;
+    padding: 100px 100px 0px 50px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.heroText {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heroText h1 {
+    font-size: 60px;
+}
+
+.heroBtn {
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid $dark-blue;
+    color: $dark-blue;
+    cursor: pointer;
+}
+
+.heroBtn:hover {
+    background-color: $light-blue;
+}
