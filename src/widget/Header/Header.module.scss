@@ -1,7 +1,6 @@
 $main-blue: #5766c2;
 $dark-blue: #3e4a98;
 
-
 .header {
   display: flex;
   padding: 20px 50px;
@@ -30,19 +29,6 @@ $dark-blue: #3e4a98;
 }
 
 .header a {
-    text-decoration: none;
-    color: $main-blue;
-}
-
-.headerBtn {
-    padding: 10px 15px;
-    background-color: $main-blue;
-    color: #fff;
-    border: 1px solid $dark-blue;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.headerBtn:hover {
-    background-color: $dark-blue;
+  text-decoration: none;
+  color: $main-blue;
 }
