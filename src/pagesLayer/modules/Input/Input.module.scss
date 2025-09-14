@@ -1,0 +1,17 @@
+$main-blue: #5766c2;
+$dark-blue: #3e4a98;
+$light-blue: #8b9af9;
+
+.text {
+  padding: 10px 15px;
+  width: 900px;
+  height: 150px;
+  border: 1px solid $main-blue;
+  border-radius: 10px;
+  color: $main-blue;
+  outline: none;
+}
+
+.text::placeholder {
+  color: $light-blue;
+}

@@ -1,0 +1,21 @@
+$main-blue: #5766c2;
+$dark-blue: #3e4a98;
+$light-blue: #b4beff;
+
+.addImgBtn {
+  width: 930px;
+  height: 100px;
+  background-color: $light-blue;
+  border-radius: 10px;
+  color: $main-blue;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.addImgBtn:hover {
+  background-color: $main-blue;
+  color: $light-blue;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./Header.module.scss";
+import BlueBtn from "@/pagesLayer/modules/BlueBtn/BlueBtn";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
         <li>
           <a href="#about">О сервисе</a>
         </li>
-        <button className={s.headerBtn}>Анализировать</button>
+        <BlueBtn text="Анализировать" />
       </div>
     </div>
   );

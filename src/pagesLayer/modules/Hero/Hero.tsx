@@ -1,5 +1,6 @@
 import React from "react";
-import s from "./Hero.module.scss"
+import s from "./Hero.module.scss";
+import WhiteBtn from "../WhiteBtn/WhiteBtn";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       <div className={s.heroText}>
         <h1>Ваш виртуальный эксперт по визуальной диагностике</h1>
         <p>AI, который помогает ставить диагноз быстрее и точнее.</p>
-        <button className={s.heroBtn}>Начать анализ</button>
+        <WhiteBtn text="Начать анализ" />
       </div>
     </div>
   );

@@ -1,11 +1,12 @@
 import React from "react";
-import s from "./Main.module.scss";
 import Hero from "../modules/Hero/Hero";
 import About from "../modules/About/About";
+import Header from "@/widget/Header/Header";
 
 const Main = () => {
   return (
-    <div className={s.main}>
+    <div>
+      <Header />
       <Hero />
       <About />
     </div>

@@ -1,0 +1,41 @@
+$main-blue: #5766c2;
+$dark-blue: #3e4a98;
+$light-blue: #b4beff;
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resultBlock {
+  display: flex;
+  gap: 20px;
+  width: 950px;
+  height: 600px;
+  border: 3px solid $light-blue;
+  border-radius: 10px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.resultBlock .left {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  background-color: $light-blue;
+  color: $light-blue;
+}
+
+.resultBlock .right {
+  padding: 20px;
+  position: absolute;
+  left: 50px;
+}
+
+.result h2 {
+  font-size: 40px;
+  color: $main-blue;
+}

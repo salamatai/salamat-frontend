@@ -1,0 +1,15 @@
+$main-blue: #5766c2;
+$dark-blue: #3e4a98;
+
+.blueBtn {
+  padding: 10px 15px;
+  background-color: $main-blue;
+  color: #fff;
+  border: 1px solid $dark-blue;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.blueBtn:hover {
+  background-color: $dark-blue;
+}
