@@ -1,9 +1,9 @@
-import React from "react";
-import s from "./Result.module.scss";
+import React from 'react'
+import s from './Result.module.scss'
 
 const Result = () => {
   return (
-    <div className={s.result}>
+    <section className={s.result}>
       <h2>Ваши результаты:</h2>
       <div className={s.resultBlock}>
         <div className={s.left}>.</div>
@@ -16,7 +16,7 @@ const Result = () => {
           corporis nam suscipit nesciunt?
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,12 +1,12 @@
-import React from "react";
-import s from "./Try.module.scss";
-import BlueBtn from "../modules/BlueBtn/BlueBtn";
-import Input from "../modules/Input/Input";
-import AddImgBtn from "../modules/AddImgBtn/AddImgBtn";
+import React from 'react'
+import s from './Try.module.scss'
+import BlueBtn from '../modules/BlueBtn/BlueBtn'
+import Input from '../modules/Input/Input'
+import AddImgBtn from '../modules/AddImgBtn/AddImgBtn'
 
 const Try = () => {
   return (
-    <div className={s.try}>
+    <section className={s.try}>
       <div className={s.tryLeft}>
         <div className={s.tryText}>
           <h3>Инструкция к применению сервиса:</h3>
@@ -36,7 +36,7 @@ const Try = () => {
           <BlueBtn text="Анализировать изображение" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
