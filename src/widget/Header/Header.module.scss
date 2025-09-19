@@ -3,7 +3,7 @@ $dark-blue: #3e4a98;
 
 .header {
   display: flex;
-  padding: 20px 50px;
+  padding: 20px 50px 20px 100px;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -13,6 +13,7 @@ $dark-blue: #3e4a98;
 
 .header img {
   height: 50px;
+  margin-left: -30px;
 }
 
 .headerRight {
