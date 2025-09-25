@@ -11,12 +11,12 @@ const AddImgBtn: React.FC<Props> = ({ onFileSelect }) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleClick = () => {
-    inputRef.current?.click(); // открываем проводник
+    inputRef.current?.click();
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      onFileSelect(e.target.files[0]); // передаём файл родителю
+      onFileSelect(e.target.files[0]);
     }
   };
 
