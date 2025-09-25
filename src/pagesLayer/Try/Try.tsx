@@ -8,9 +8,12 @@ import AddImgBtn from "../modules/AddImgBtn/AddImgBtn";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/store/store";
 import { analyzeImageAction } from "@/store/actions/analysis.action";
+import { useRouter } from "next/navigation";
+import WhiteBtn from "../modules/WhiteBtn/WhiteBtn";
 
 const Try = () => {
   const dispatch = useDispatch<AppDispatch>();
+  const router = useRouter();
 
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [symptoms, setSymptoms] = useState("");
@@ -26,7 +29,7 @@ const Try = () => {
       alert("Пожалуйста, загрузите изображение!");
       return;
     }
-
+    router.push("/result");
     // dispatch(analyzeImageAction({ file: selectedFile, symptoms }));
   };
 
@@ -61,7 +64,10 @@ const Try = () => {
 
           <Input value={symptoms} onChange={setSymptoms} />
 
-          <BlueBtn text="Анализировать изображение" onClick={handleAnalyze} />
+          <div className={s.string}>
+            <BlueBtn text="Анализировать изображение" onClick={handleAnalyze} />
+            <WhiteBtn text="На главную" onClick={() => router.push("/")} />
+          </div>
         </div>
 
         {selectedFile && (
@@ -69,12 +75,7 @@ const Try = () => {
         )}
 
         {analysisState.loading && <p>Идёт анализ...</p>}
-        {analysisState.result && (
-          <div className={s.result}>
-            <h4>Результат анализа:</h4>
-            <pre>{JSON.stringify(analysisState.result, null, 2)}</pre>
-          </div>
-        )}
+        {analysisState.result && router.push("/result")}
         {analysisState.error && (
           <p style={{ color: "red" }}>{analysisState.error}</p>
         )}

@@ -6,8 +6,12 @@ type Props = {
   onClick?: () => void;
 };
 
-const BlueBtn: React.FC<Props> = ({ text, onClick  }) => {
-  return <button className={s.blueBtn} onClick={onClick}>{text}</button>;
+const BlueBtn: React.FC<Props> = ({ text, onClick }) => {
+  return (
+    <button className={s.blueBtn} onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
 export default BlueBtn;

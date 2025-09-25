@@ -7,7 +7,12 @@ $light-blue: #b4beff;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 40px;
+    color: $main-blue;
+  }
 }
 
 .resultBlock {
@@ -17,25 +22,26 @@ $light-blue: #b4beff;
   height: 600px;
   border: 3px solid $light-blue;
   border-radius: 10px;
-  overflow-y: scroll;
-  position: relative;
+  overflow: hidden;
 }
 
-.resultBlock .left {
+.left {
   width: 40px;
-  height: 100%;
-  position: absolute;
   background-color: $light-blue;
+  position: sticky;
+  top: 0;
+  height: 100%;
   color: $light-blue;
 }
 
-.resultBlock .right {
+.right {
+  flex: 1;
   padding: 20px;
-  position: absolute;
-  left: 50px;
+  overflow-y: auto;
+  height: 100%;
 }
 
-.result h2 {
-  font-size: 40px;
-  color: $main-blue;
+.string {
+  display: flex;
+  gap: 30px;
 }

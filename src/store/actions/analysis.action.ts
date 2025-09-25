@@ -7,22 +7,25 @@ interface AnalyzePayload {
 
 export const analyzeImageAction = createAsyncThunk(
   "analysis/analyzeImage",
-  async ({ symptoms, file }: AnalyzePayload, thunkAPI) => {
+  async ({ symptoms }: AnalyzePayload, thunkAPI) => {
     try {
-      const formData = new FormData();
-      formData.append("symptoms", symptoms);
-      if (file) formData.append("image", file);
-
-      const response = await fetch("/api/analyze", {
+      const res = await fetch("/api/analyze", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ symptoms }),
       });
 
-      if (!response.ok) throw new Error("Ошибка анализа");
+      const result = await res.json();
 
-      const result = await response.json();
+      if (!res.ok) {
+        console.error(result);
+        return thunkAPI.rejectWithValue(result);
+      }
+
+      console.log(result);
       return result;
     } catch (err: any) {
+      console.error(err);
       return thunkAPI.rejectWithValue(err.message);
     }
   }

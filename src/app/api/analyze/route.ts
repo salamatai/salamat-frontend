@@ -1,13 +1,9 @@
-// pages/api/analyze.ts
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method !== "POST") return res.status(405).end();
-
+export async function POST(req: NextRequest) {
   try {
+    const { symptoms } = await req.json();
+
     const response = await fetch("https://api.deepseek.com/chat/completions", {
       method: "POST",
       headers: {
@@ -18,15 +14,15 @@ export default async function handler(
         model: "deepseek-chat",
         messages: [
           { role: "system", content: "You are a helpful assistant." },
-          { role: "user", content: req.body.message },
+          { role: "user", content: symptoms },
         ],
         stream: false,
       }),
     });
 
     const data = await response.json();
-    res.status(200).json(data);
-  } catch (err) {
-    res.status(500).json({ error: "Ошибка запроса к DeepSeek" });
+    return NextResponse.json(data);
+  } catch (err: any) {
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
