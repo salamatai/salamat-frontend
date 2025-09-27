@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import s from "./Try.module.scss";
-import BlueBtn from "../modules/BlueBtn/BlueBtn";
-import Input from "../modules/Input/Input";
-import AddImgBtn from "../modules/AddImgBtn/AddImgBtn";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "@/store/store";
-import { analyzeImageAction } from "@/store/actions/analysis.action";
+import React, {useState} from 'react'
+import s from './Try.module.scss'
+import BlueBtn from '@/shared/ui/BlueBtn/BlueBtn'
+import Input from '@/shared/ui/Input/Input'
+import AddImgBtn from '@/shared/ui/AddImgBtn/AddImgBtn'
+import {useDispatch, useSelector} from 'react-redux'
+import {AppDispatch, RootState} from '@/store/store'
 
 const Try = () => {
   const dispatch = useDispatch<AppDispatch>();

@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import s from "./Header.module.scss";
-import BlueBtn from "@/pagesLayer/modules/BlueBtn/BlueBtn";
-import { useRouter } from "next/navigation";
+import React from 'react'
+import s from './Header.module.scss'
+import BlueBtn from '@/shared/ui/BlueBtn/BlueBtn'
+import {useRouter} from 'next/navigation'
 
 const Header = () => {
   const router = useRouter();

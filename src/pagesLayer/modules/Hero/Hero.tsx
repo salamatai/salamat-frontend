@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import s from "./Hero.module.scss";
-import WhiteBtn from "../WhiteBtn/WhiteBtn";
-import { useRouter } from "next/navigation";
+import React from 'react'
+import s from './Hero.module.scss'
+import WhiteBtn from '@/shared/ui/WhiteBtn/WhiteBtn'
+import {useRouter} from 'next/navigation'
 
 const Hero = () => {
   const router = useRouter();
