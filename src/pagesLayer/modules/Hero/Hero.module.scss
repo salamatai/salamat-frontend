@@ -4,11 +4,18 @@ $light-blue: #b4beff;
 
 .hero {
   margin-top: 100px;
+  height: 80vh;
   display: flex;
   background-color: $main-blue;
   padding: 100px 100px 0px 50px;
   justify-content: space-between;
   color: #fff;
+  background-image: url("/img/bgImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
 }
 
 .heroText {
@@ -16,10 +23,18 @@ $light-blue: #b4beff;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 1;
+  margin-left: 50px;
+}
+
+.heroImg {
+  z-index: 1;
+  width: 500px;
+  margin-bottom: -30px;
 }
 
 .heroText h1 {
-  font-size: 60px;
+  font-size: 65px;
 }
 
 .heroBtn {
@@ -33,4 +48,12 @@ $light-blue: #b4beff;
 
 .heroBtn:hover {
   background-color: $light-blue;
+}
+
+.bgImg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  transform: rotate(180deg);
 }

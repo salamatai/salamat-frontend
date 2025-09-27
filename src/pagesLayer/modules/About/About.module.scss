@@ -9,12 +9,12 @@ $light-blue: #b4beff;
   color: #000;
   background: linear-gradient(
     to top,
-    $main-blue 0%,
-    rgba(87, 102, 194, 0.3) 50%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(17, 29, 111, 0.815)0%,
+    rgba(65, 157, 255, 0.31) 50%,
+    rgb(255, 255, 255) 100%
   );
 
-  h2 {
+  h2 {  
     font-size: 40px;
     color: $main-blue;
     margin-bottom: 20px;
